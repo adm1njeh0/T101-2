@@ -46,8 +46,8 @@ complete -o nospace -C /usr/local/bin/terraform terraform
 ```
 
 결과
+![image](https://github.com/adm1njeh0/T101-2/assets/52900923/2d95b2e6-2549-4dbc-b530-78f75c5f99f8)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/53d02c78-fb82-4860-9991-15e2c21eef0b/Untitled.png)
 
 # **테라폼 형상**
 
@@ -98,10 +98,9 @@ EOT
 **terraform init / terraform plan / terraform apply 단계를 거침**
 
 결과
+![image](https://github.com/adm1njeh0/T101-2/assets/52900923/10a49168-b27e-4614-8c85-c0c64590dbb6)
+![image](https://github.com/adm1njeh0/T101-2/assets/52900923/c5aa7ab9-e1f2-4f91-9562-d54b1af3956b)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/598bb214-d669-4f3a-aa60-a1fb3b58b434/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6da07125-7d4d-4428-bfef-031537145cd9/Untitled.png)
 
 1. **최신 AMI 찾기**
 
@@ -112,8 +111,8 @@ aws ssm get-parameters-by-path --path /aws/service/ami-amazon-linux-latest --que
 → 이렇게 하면 너무 많은 결과가 나오므로 이름을 기준으로 필터링
 
 결과
+![image](https://github.com/adm1njeh0/T101-2/assets/52900923/1bd4e412-cf87-400e-9823-bdff2556a108)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bcf8bbfb-ce68-4b9d-ab16-c12f92d065c4/Untitled.png)
 
 1. **EC2 1대를 배포하면서 Userdata 활용하여 웹서버 운용**
 
