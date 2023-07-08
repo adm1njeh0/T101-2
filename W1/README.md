@@ -102,7 +102,7 @@ EOT
 
 
 
-1. **최신 AMI 찾기**
+2. **최신 AMI 찾기**
 
 ```jsx
 aws ssm get-parameters-by-path --path /aws/service/ami-amazon-linux-latest --query "Parameters[].{Name:Name,Value:Value,LastModifiedDate:LastModifiedDate}"
@@ -114,7 +114,7 @@ aws ssm get-parameters-by-path --path /aws/service/ami-amazon-linux-latest --que
 
 ![image](https://github.com/adm1njeh0/T101-2/assets/52900923/c5aa7ab9-e1f2-4f91-9562-d54b1af3956b)
 
-1. **EC2 1대를 배포하면서 Userdata 활용하여 웹서버 운용**
+3. **EC2 1대를 배포하면서 Userdata 활용하여 웹서버 운용**
 
 ```jsx
 cat <<EOT > main.tf
@@ -167,7 +167,7 @@ EOT
 결과
 ![image](https://github.com/adm1njeh0/T101-2/assets/52900923/1bd4e412-cf87-400e-9823-bdff2556a108)
 
-1. **업무수행 중 빈번하게 환경을 만들어 테스트 해야해서, 모듈 구분없이 [main.tf](http://main.tf) 만 이용하여 VPC, Subnet, RT, IGW, NAT + 테스트 서버 까지 테라폼 코드로 테스트 함**
+4. **업무수행 중 빈번하게 환경을 만들어 테스트 해야해서, 모듈 구분없이 [main.tf](http://main.tf) 만 이용하여 VPC, Subnet, RT, IGW, NAT + 테스트 서버 까지 테라폼 코드로 테스트 함**
 
 ```jsx
 provider "aws" {
