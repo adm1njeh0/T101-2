@@ -99,7 +99,7 @@ EOT
 
 결과
 ![image](https://github.com/adm1njeh0/T101-2/assets/52900923/10a49168-b27e-4614-8c85-c0c64590dbb6)
-![image](https://github.com/adm1njeh0/T101-2/assets/52900923/c5aa7ab9-e1f2-4f91-9562-d54b1af3956b)
+
 
 
 1. **최신 AMI 찾기**
@@ -111,8 +111,8 @@ aws ssm get-parameters-by-path --path /aws/service/ami-amazon-linux-latest --que
 → 이렇게 하면 너무 많은 결과가 나오므로 이름을 기준으로 필터링
 
 결과
-![image](https://github.com/adm1njeh0/T101-2/assets/52900923/1bd4e412-cf87-400e-9823-bdff2556a108)
 
+![image](https://github.com/adm1njeh0/T101-2/assets/52900923/c5aa7ab9-e1f2-4f91-9562-d54b1af3956b)
 
 1. **EC2 1대를 배포하면서 Userdata 활용하여 웹서버 운용**
 
@@ -165,7 +165,7 @@ EOT
 ```
 
 결과
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/51974a55-24f8-4a02-beb4-ea5c439b6b5c/Untitled.png)
+![image](https://github.com/adm1njeh0/T101-2/assets/52900923/1bd4e412-cf87-400e-9823-bdff2556a108)
 
 1. **업무수행 중 빈번하게 환경을 만들어 테스트 해야해서, 모듈 구분없이 [main.tf](http://main.tf) 만 이용하여 VPC, Subnet, RT, IGW, NAT + 테스트 서버 까지 테라폼 코드로 테스트 함**
 
